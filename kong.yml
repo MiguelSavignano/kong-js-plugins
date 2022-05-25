@@ -1,0 +1,22 @@
+_format_version: "1.1"
+_transform: true
+services:
+  - url: https://mockbin.org
+    routes:
+      - paths:
+          - /mock
+    plugins:
+      - name: jwt-to-headers
+      - name: jwt-claim-sub-split
+        config:
+          split: ':'
+          names: organization-id:user-id
+
+  - url: https://jsonplaceholder.typicode.com
+    routes:
+      - paths:
+          - /placeholder
+    plugins:
+      - name: filter-list
+        config:
+          filter_list: 'title'
