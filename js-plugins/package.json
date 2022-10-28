@@ -1,15 +1,12 @@
 {
-  "name": "kong-plugin-jwt-to-headers",
+  "name": "kong-plugins",
   "version": "0.1.0",
   "description": "",
-  "main": "jwt-to-headers.ts",
+  "main": "index.js",
   "scripts": {
     "test": "jest"
   },
-  "files": [
-    "jwt-to-headers.ts"
-  ],
-  "author": "migue.masx@gmail.com",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "jwt-decode": "^3.1.2",
