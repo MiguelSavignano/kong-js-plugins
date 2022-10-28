@@ -22,7 +22,7 @@ jobs:
 
       - name: Publish to Npm
         run: |
-          cd js-plugins
+          cd pacakges/kong-plugin-jwt-to-headers
           echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}' >> .npmrc
           npm publish
         env:
